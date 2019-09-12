@@ -5,5 +5,4 @@
 @yield('user_index')
 
 @yield('post_index')
-  <!-- post_add -->
-@yield('post_add')
+  

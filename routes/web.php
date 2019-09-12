@@ -28,9 +28,9 @@ Route::get('posts','PostsController@index')->name('post_index');
 //posts creat Route
 Route::get('post/add','PostsController@add')->name('post_add');
 
-Route::post('post.create','PostsController@create')->name('post_create');
+Route::post('post/add','PostsController@create')->name('post_create');
 
-//post update Route
-Route::get('post.edit','PostsController@edit')->name('post_edit');
+// //post update Route
+// Route::get('post/edit','PostsController@edit')->name('post_edit');
 
-Route::post('post.edit','PostsController@edit')->name('post_update');
+// Route::post('post/edit','PostsController@update')->name('post_update');
