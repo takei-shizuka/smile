@@ -1,4 +1,4 @@
-<!-- @extends('post.layout')
+@extends('post.layout')
 
 @section('post_edit')
 
@@ -25,4 +25,4 @@
                 </tr>
             </table>
     </form>
-@endsection -->
+@endsection

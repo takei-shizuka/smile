@@ -6,5 +6,5 @@
 @yield('post_add')
 
 <!-- post_edit -->
-<!-- @yield('post_edit') -->
+@yield('post_edit')
 <!-- 列挙していいのか？ -->

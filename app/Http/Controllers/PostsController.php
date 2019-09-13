@@ -44,30 +44,30 @@ class PostsController extends Controller
         return redirect('/');
     }
 //更新 method
-//     public function edit(Request $request)
-//     {
-//         $post = Post::find($request->id);
-//         return view('post.edit',['post'->$post]);
-//     }
+    public function edit(Request $request)
+    {
+        $post = Post::find($request->id);
+        return view('post.edit',['post'->$post]);
+    }
     
-//     public function update(Request $request)
-//     {
-//         $post = Post::find($request->id);
-//         $post->title = $request->title();
-//         $post->content = $request->content();
-//         //$post->image = $request->image();
-//         $post->date = $request->date();
-//         $post->country_id = $request->country_id();
-//         $post->fill($post)->save();
-//         return redirect('/');
+    public function update(Request $request)
+    {
+        $post = Post::find($request->id);
+        $post->title = $request->title();
+        $post->content = $request->content();
+        //$post->image = $request->image();
+        $post->date = $request->date();
+        $post->country_id = $request->country_id();
+        $post->fill($post)->save();
+        return redirect('/');
 
-//     }
+    }
 
 
-//     // public function remove(Request $request)
-//      {
-//          $post = Post::find($request->id);
-//          $post->delete();
-//          return redirect('/');
-//      }
+    public function remove(Request $request)
+     {
+         $post = Post::find($request->id);
+         $post->delete();
+         return redirect('/');
+     }
  }
